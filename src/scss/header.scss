@@ -1,0 +1,52 @@
+@import "color.scss";
+.header {
+  background: #FFFFFF;
+  display: none;
+
+  &__inner {
+    display: flex;
+    padding: 24px 24px 24px 24px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &:before {
+      content: url("../img/divider.svg");
+      bottom: 5px;
+      left: 60px;
+      position: absolute;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    margin-left: 24px;
+  }
+
+  &__btn {
+    margin-right: 16px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:after {
+      content: url("../img/divider.svg");
+      right: 125px;
+      top: 5px;
+      position: absolute;
+    }
+  }
+  &__text-btn {
+    display: flex;
+    align-items: center;
+  }
+}
+.current:nth-child(3){
+  margin-right: 16px;
+}

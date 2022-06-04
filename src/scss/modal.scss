@@ -1,0 +1,89 @@
+.modal{
+  max-width: 440px;
+  min-width: 440px;
+  background: #FFFFFF;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  transition: 1s;
+  transform: translateX(516px);
+  &__active{
+    transform: translateX(0);
+  }
+  &__title{
+    font-size: 24px;
+    font-family: "Lakes-bold";
+    color: #1B1C21;
+    padding-top: 40px;
+    padding-left: 32px;
+    position: relative;
+    &:before{
+      content: url("../img/highlight.svg");
+      position: absolute;
+      width: 3px;
+      height: 40px;
+      left: 0;
+      top: 30px;
+    }
+  }
+  &__form{
+    display: flex;
+    max-width: 376px;
+    flex-direction: column;
+    padding-top: 24px;
+    margin-left: 32px;
+  }
+  &__input{
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    padding: 16px 0 12px 16px;
+    margin-bottom: 16px;
+    &:focus{
+      border: 1px solid #EAEAEA;
+      border-radius: 8px;
+    }
+  }
+  &__text{
+    font-size: 14px;
+    padding: 0 32px;
+    font-weight: bold;
+    font-family: "Regular";
+    color: #7E7E82;
+  }
+  &__link{
+    color: #FF3E79;
+  }
+  &__btn{
+    background:#FF3E79;
+    display: flex;
+    align-items: center;
+    width: 119px;
+    height: 32px;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: 16px 24px 16px 0;
+    margin-top: 23px;
+    margin-left: 272px;
+    &::after{
+      content: ">";
+      color: #FFFFFF;
+      width: 24px;
+    }
+    & p{
+      color: #FFFFFF;
+      padding: 0 17px 0 12px;
+      font-size: 12px;
+      font-family: "Lakes-bold";
+    }
+  }
+  &__close{
+    position: absolute;
+    left: -72px;
+    top: 27px;
+  }
+}
+
+
+
