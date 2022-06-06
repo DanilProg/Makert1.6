@@ -349,9 +349,8 @@ ul li {
     margin: 16px 15px 0 0; }
   .service-brand__container {
     padding-left: 24px; }
-  .service-brand .service-repair__container {
-    display: flex;
-    flex-wrap: wrap; }
+  .service__items {
+    grid-template-columns: 2fr 1fr 1fr 1fr; }
   .service__container {
     padding-left: 24px; }
   .service.brand {
@@ -386,8 +385,6 @@ ul li {
     display: flex;
     margin-right: 16px;
     align-items: start; }
-    .service.price .service__items:first-child {
-      display: none; }
   .service.price .service__btn {
     position: absolute;
     bottom: 16px;
@@ -541,9 +538,8 @@ ul li {
     margin: 16px 15px 0 0; }
   .service-brand__container {
     padding-left: 24px; }
-  .service-brand .service-repair__container {
-    display: flex;
-    flex-wrap: wrap; }
+  .service__items {
+    grid-template-columns: 2fr 1fr 1fr 1fr; }
   .service__container {
     padding-left: 24px; }
   .service.brand {
@@ -578,8 +574,6 @@ ul li {
     display: flex;
     margin-right: 16px;
     align-items: start; }
-    .service.price .service__items:first-child {
-      display: none; }
   .service.price .service__btn {
     position: absolute;
     bottom: 16px;
